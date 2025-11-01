@@ -7,6 +7,7 @@ from stats import count_words
 from stats import count_letters
 from stats import sorted_list_of_dictionaries 
 
+
 def main():
     
     book_path = "books/frankenstein.txt"
@@ -15,6 +16,10 @@ def main():
     count_letter = count_letters(get_book)
     sorted_list = sorted_list_of_dictionaries(count_letter)
 
-    print(sorted_list)
+    print(f"Found {count_word} total words")
+   #char num 
+
+    for i in sorted_list:
+        print(f"{i["char"]}: {i["num"]}")
 
 main()

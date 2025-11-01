@@ -23,22 +23,20 @@ def count_letters(get_book):
             char[lowered] += 1
         else:
             char[lowered] = 1
-    print(char)
     return char
 
-def sort_numbers(count_letter):
-    return count_letter["num"]
-
-
-def sorted_count_letters(count_letter):
+def sorted_list_of_dictionaries(count_letter):
     l1 = []
-
     for i in count_letter:
-        l1.append(count_letter)
 
-    l1.sort(reverse =True, key=sort_numbers)
+        dictionary = {
+                "char":i,"num":count_letter[i]
+                }
+        print(dictionary)
+        l1.append(dictionary)
+    # here's where it gets hazy
+    print("and finally, ", dictionary)
     print(l1)
 
     
-
-
+    

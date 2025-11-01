@@ -5,7 +5,7 @@
 from stats import open_book 
 from stats import count_words
 from stats import count_letters
-from stats import sorted_count_letters
+from stats import sorted_list_of_dictionaries 
 
 def main():
     
@@ -13,11 +13,8 @@ def main():
     get_book = open_book(book_path)
     count_word = count_words(get_book)
     count_letter = count_letters(get_book)
-    sorted_letters = sorted_count_letters(count_letter)
+    sorted_list = sorted_list_of_dictionaries(count_letter)
 
-    sort_number = sort_numbers(count_letter)
+    print(sorted_list)
 
-    print(sort_number)
-
-    
 main()

@@ -1,0 +1,30 @@
+book_sto_path = "/home/gabriel/bdd_project_bookbot/bookbot/books/"
+book_path = ""
+#book_name = pass
+def get_book_text (book_sto_path):
+    
+    
+
+    book_name = input("enter book name: ")
+    book_path = book_sto_path + book_name + ".txt"
+    a = print("book path type is a : ", type(book_path)
+
+    return book_path, a
+
+print(get_book_text(book_sto_path))
+
+
+
+
+def main(get_book_text):
+
+    with open(get_book_text) as f:
+        file_contents = f.read()
+        return file_contents
+
+print(main(get_book_text))
+
+
+
+
+
